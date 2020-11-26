@@ -101,9 +101,7 @@ This call returns all employees that were created through the API. Employees cre
     "CompanyId": 1000,
     "EmployeeID": "12345678"
   },
-  {
   ...
-  }
 ]
 ```
 
@@ -135,16 +133,12 @@ This call makes a complete set based change of all employees in the system.
 >- **B** and **C** will be updated with the values provided
 >- **D** will be added
 
-> **InvitationDate**
->- Only for new employees. 
->- If obmitted then then invitation will be sent immediately or at 8 o'clock if outside business hours
-
 **Data constraints**
 
 | Field                | Type      | Requirements                                      | Description                                                     |
 | -------------------- | --------- | ------------------------------------------------- | --------------------------------------------------------------- |
 | `EmployeeID`\*       | `String`  | `Unique`, *Max length: 50*                        | Your internal primary key                                       |
-| `InvitationDate`     | `String`  | *Format:* `yyyy-MM-ddTHH:mm:ssZ`                  | Date and time when to sent out invitation. See Note\* |
+| `InvitationDate`     | `String`  | *Format:* `yyyy-MM-ddTHH:mm:ssZ`                  | Date and time when to sent out invitation\*\*                   |
 | `Firstname`\*        | `String`  | *Max length:* **150**                             | Firstname of the employee                                       |
 | `Lastname`\*         | `String`  | *Max length:* **150**                             | Lastname of the employee                                        |
 | `Phonenumber`        | `String`  | `Unique`, *Must match regex:* `^\+[0-9]{6,20}$`   | Cell phone E.g. +4523232323                                     |
@@ -167,6 +161,12 @@ This call makes a complete set based change of all employees in the system.
 | `Dim10`              | `String`  | *Max length:* **50**                              | Reporting specific data                                         |
 
 **\*** Required
+
+**\*\***
+
+> **InvitationDate**
+>- Only for new employees. 
+>- If obmitted then then invitation will be sent immediately or at 8 o'clock if outside business hours
 
 ### Example
 The request consists of an array of Employees based on the model described above.
