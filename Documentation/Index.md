@@ -27,18 +27,22 @@ The Token can be sent in one of two ways:
 # Integration
 
 **External Integration**
+
 Allows the integration of Howdy with HR-systems in order to maintain employee data.
 Creates a User with the Role **HRIntegration** (see the user in *Access control* in Howdy Portal)
 Following the steps above results in Authentication token used in **ALL** Api calls
 
 **Test Environment**
+
 Test Environment (also called *UAT*) is used to test new features and resets once a day, meening any and all changes made to the system are overwriten by the data used in production.
 
 **Batch limit**
+
 Percent of allowed change per one request
 E.g. Batch limit of **25** and *100 Users in company* results in maximum of 25 addition or subtractions
 
 **Automatically invite**
+
 If **InvitationDate** is not set and this is enabled everytime a new user is added an invitation is send.
 
 # API
