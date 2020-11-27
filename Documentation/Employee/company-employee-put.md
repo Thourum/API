@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Put
+title: PUT
 nav_order: 2
 parent: Employee
 ---
@@ -13,6 +13,8 @@ This call makes a complete set based change of all employees in the system.
 **Method** : `PUT`
 
 **Auth required** : YES
+
+**Role:** *HRIntegration*
 
 **Note**
 

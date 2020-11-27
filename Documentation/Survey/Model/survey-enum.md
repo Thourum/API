@@ -3,6 +3,7 @@ layout: default
 title: Enums
 nav_order: 2
 parent: Model
+grand_parent: Survey
 ---
 
 # Enums
