@@ -1,3 +1,11 @@
+---
+layout: default
+title: Employee
+nav_order: 3
+has_children: true
+permalink: /Documentation/Employee
+---
+
 # GET
 This call returns all employees that were created through the API. Employees created through the portal interface will not be included.
 
