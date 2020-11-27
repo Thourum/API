@@ -20,15 +20,15 @@ These page contains samples and specifications on how to integrate Howdy with HR
 
 # Endpoints
 
-**Test:**  https://wlb-uat-ne1-api.azurewebsites.net/
+**Test:**  [https://wlb-uat-ne1-api.azurewebsites.net/](https://wlb-uat-ne1-api.azurewebsites.net/)
 
-**Production:**  https://api-ne1.worklifebarometer.com/
+**Production:**  [https://api-ne1.worklifebarometer.com/](https://api-ne1.worklifebarometer.com/)
 
 # Security
 All calls to the API **must be authenticated** by presenting a valid JWT ([JSON Web Token](https://jwt.io/)).
 
 To obtain the token do the following:
-- Access **Howdy Portal** on the following url: *https://auth.worklifebarometer.com/*
+- Access **Howdy Portal** on the following url: [https://auth.worklifebarometer.com/](https://auth.worklifebarometer.com/)
   - In case you already have access to the Test Environment choose the desired Environment
 - Navigate to *Company* > *Integration* and **Turn On External Integration**
   - Turn on **Batch limit** and set the max difference to 25 (Recommended)
