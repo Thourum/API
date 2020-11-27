@@ -1,3 +1,11 @@
+---
+layout: default
+title: Interface
+nav_order: 1
+has_children: true
+permalink: /Documentation/Survey/Model
+---
+
 # Interfaces
 
 ## QuestionConfiguration
