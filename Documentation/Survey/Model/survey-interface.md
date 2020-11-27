@@ -3,6 +3,7 @@ layout: default
 title: Interface
 nav_order: 1
 parent: Model
+grand_parent: Survey
 ---
 
 # Interfaces

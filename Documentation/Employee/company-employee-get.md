@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Get
+title: GET
 nav_order: 1
 parent: Employee
 ---

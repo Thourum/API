@@ -3,6 +3,7 @@ layout: default
 title: GET by Id
 nav_order: 2
 parent: Template
+grand_parent: Survey
 ---
 
 
