@@ -1,5 +1,20 @@
+---
+layout: default
+title: Home
+nav_order: 1
+permalink: /
+---
 # Howdy API Documentation
-> These page contains samples and specifications on how to integrate Howdy with HR-systems in order to maintain employee data.
+{: .fs-9 }
+
+These page contains samples and specifications on how to integrate Howdy with HR-systems in order to maintain employee data.
+{: .fs-6 .fw-300 }
+
+[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/WorklifeBarometer/API){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+---
+
+# Getting started
 
 - [C# Sample code](./Samples/ActiveDirectoryExample/ActiveDirectoryExample)
 
@@ -46,17 +61,3 @@ E.g. Batch limit of **25** and *100 Users in company* results in maximum of 25 a
 **Automatically invite**
 
 If **InvitationDate** is not set and this is enabled everytime a new user is added an invitation is send.
-
-# APIs
-
-| URL Name  | Methods allowed   |
-|:--|--:|
-|[/v1.0/Company/{companyId}/Employee](./Documentation/company-employee.md)|GET, PUT|
-|[/v1.0/Company/{companyId}/ApiCalls](./Documentation/company-apiCalls.md)| GET|
-|[/v1.0/Company/{companyId}/Language/Enabled](./Documentation/companyi-language-enabled.md)| GET|
-|[/v1.0/Survey?companyId={companyId}](./Documentation/survey.md)|GET|
-|[/v1.0/Survey/{surveyId}](./Documentation/survey-surveyId.md)|GET|
-|[/v1.0/Survey/ChangeState/{surveyState}](./Documentation/survey-changestate.md)| POST|
-
-# Survey Models
-> see [Survey Models](./Documentation/survey-interface.md)
