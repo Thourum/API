@@ -1,3 +1,10 @@
+---
+layout: default
+title: Put
+nav_order: 2
+parent: Employee
+---
+
 # PUT
 This call makes a complete set based change of all employees in the system.
 
