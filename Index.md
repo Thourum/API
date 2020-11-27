@@ -32,7 +32,7 @@ To obtain the token do the following:
   - In case you already have access to the Test Environment choose the desired Environment
 - Navigate to *Company* > *Integration* and **Turn On External Integration**
   - Turn on **Batch limit** and set the max difference to 25 (Recommended)
-- Navigate to *Access control* and look for a user with the name "&lt;YourCompanyName&gt; API User" (if you don't see it, please contact support at support@worklifebarometer.com)
+- Navigate to *Access control* and look for a user with the name "&lt;YourCompanyName&gt; API User" (if you don't see it, please contact support at [support@worklifebarometer.com](mailto:support@worklifebarometer.com))
   - The API user should have the role HRIntegration. Click the three dots and then "Generate new App Token"
   - This should open a dialog box with a newly generated token
   - Keep the token secure
