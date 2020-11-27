@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Survey
+title: GET
 nav_order: 4
-has_children: true
-permalink: /Documentation/Survey
+parent: Survey
 ---
+
 
 # GET
 

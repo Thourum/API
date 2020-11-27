@@ -1,3 +1,11 @@
+---
+layout: default
+title: POST
+nav_order: 1
+parent: Change State
+---
+
+
 # POST
 Change state of survey ids included in request payload as an array of integers.
 >Please find all possible survey states [here](../Model/survey-enum.md#SurveyState).

@@ -1,3 +1,10 @@
+---
+layout: default
+title: GET
+nav_order: 3
+parent: Survey
+---
+
 # GET 
 get survey by Id
 
