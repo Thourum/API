@@ -1,4 +1,11 @@
-# GET Api Calls
+---
+layout: default
+title: GET API Calls
+nav_order: 1
+parent: Company
+---
+
+# Api Calls
 
 **URL** : `/v1.0/company/{companyId}/apicalls`
 

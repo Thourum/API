@@ -1,4 +1,11 @@
-# GET Enabled Language
+---
+layout: default
+title: GET Enabled Language
+nav_order: 2
+parent: Company
+---
+
+# Enabled Language
 
 **URL** : `/v1.0/Company/{companyId}/Language/Enabled`
 
