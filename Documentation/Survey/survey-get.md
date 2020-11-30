@@ -7,8 +7,7 @@ parent: Survey
 
 
 # GET
-
-All surveys in company.
+Get all surveys in company.
 
 **URL** : `/v1.0/Survey?companyId={companyId}`
 

@@ -18,7 +18,7 @@ This call makes a complete set based change of all employees in the system.
 
 **Note**
 
-> If employee `[A, B, C]`exists in Howdy and employee `[B, C, D]` are sent via this call then:
+> If employee `[A, B, C]` exists in Howdy and employee `[B, C, D]` are sent via this call then:
 >- **A** will be removed
 >- **B** and **C** will be updated with the values provided
 >- **D** will be added
@@ -27,14 +27,14 @@ This call makes a complete set based change of all employees in the system.
 
 | Field                | Type      | Requirements                                      | Description                                                     |
 | -------------------- | --------- | ------------------------------------------------- | --------------------------------------------------------------- |
-| `EmployeeID`\*       | `String`  | `Unique`, *Max length: 50*                        | Your internal primary key                                       |
+| `EmployeeID`\*       | `String`  | `Unique`, *Max length:* **50**                    | Your internal primary key                                       |
 | `InvitationDate`     | `String`  | *Format:* `yyyy-MM-ddTHH:mm:ssZ`                  | Date and time when to sent out invitation\*\*                   |
 | `Firstname`\*        | `String`  | *Max length:* **150**                             | Firstname of the employee                                       |
 | `Lastname`\*         | `String`  | *Max length:* **150**                             | Lastname of the employee                                        |
-| `Phonenumber`        | `String`  | `Unique`, *Must match regex:* `^\+[0-9]{6,20}$`   | Cell phone E.g. +4523232323                                     |
-| `Email`\*            | `String`  | `Unique`, Valid email                             | E-mail address                                                  |
-| `Gender`             | `Integer` | Values: `0` = Male, `1` = Female, `9` = Not known | Gender                                                          |
-| `EmploymentStatus`\* | `Integer` | `0` = "Active",  `1` = "on leave"                 | Employment Status                                               |
+| `Phonenumber`        | `String`  | *Must match regex:* `^\+[0-9]{6,20}$`, `Unique`   | Cell phone E.g. +4523232323                                     |
+| `Email`\*            | `String`  | Valid email, `Unique`                             | E-mail address                                                  |
+| `Gender`             | `Integer` | `0` = **Male**, `1` = **Female**, `9` = **Unknown**| Gender                                                          |
+| `EmploymentStatus`\* | `Integer` | `0` = **Active**,  `1` = **On leave**             | Employment Status                                               |
 | `JobTitle`           | `String`  | *Max length:* **50**                              | Users Role in the company. E.g. "Sales Manager" or "CEO"        |
 | `Department`         | `String`  | *Max length:* **50**                              | Reporting specific data                                         |
 | `Role`               | `String`  | *Max length:* **50**                              | Reporting specific data                                         |

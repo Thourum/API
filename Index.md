@@ -4,6 +4,7 @@ title: Home
 nav_order: 1
 permalink: /
 ---
+
 # Howdy API Documentation
 {: .fs-9 }
 
@@ -32,9 +33,10 @@ To obtain the token do the following:
   - In case you already have access to the Test Environment choose the desired Environment
 - Navigate to *Company* > *Integration* and **Turn On External Integration**
   - Turn on **Batch limit** and set the max difference to 25 (Recommended)
-- Navigate to *Access control* and look for a user with the name "&lt;YourCompanyName&gt; API User" (if you don't see it, please contact support at [support@worklifebarometer.com](mailto:support@worklifebarometer.com))
-  - The API user should have the role HRIntegration. Click the three dots and then "Generate new App Token"
-  - This should open a dialog box with a newly generated token
+- Navigate to *Access control* and look for a user with the name `<YourCompanyName> API User` (if you don't see it, please contact support at [support@worklifebarometer.com](mailto:support@worklifebarometer.com))
+  - The API user should have the role HRIntegration. 
+  - Click the icon to the right and `Generate new api token`
+  - This opens a dialog with your newly generated **token** and your `CompanyId`
   - Keep the token secure
 
 The Token can be sent in one of two ways:
@@ -55,8 +57,21 @@ Test Environment (also called *UAT*) is used to test new features and resets onc
 
 **Batch limit**
 
-Percent of allowed change per one request
-E.g. Batch limit of **25** and *100 Users in company* results in maximum of 25 addition or subtractions
+Percent of allowed change per one request*
+
+`|x-y|/x*100 < Δ OR x < 100`
+
+**x** = Employees already in system
+
+**y** = Employees beeing send from request
+
+**Δ** = Batch limit
+
+> E.g. Batch limit of **25** and *100 Employees in company* results in maximum of 25 addition or subtractions
+> example 1: Updates reqest includes *50* already existing employees and *60* new employees results in *50* employees beeing removed *60* added and *50* updated (even thought there might not have been any update). This will result in change of only **10%**
+> example 2: Updates reqest includes *60* new employees and no existing, this results in *100* employees in the system beeing removed and *60* added, making it a change of **40%** at the end and the request beeing denied because the Batch limit is set **25**
+
+**\*** Exception to this is only if there is less than **100** employees in the system, then the request is processed immediately and no batch limit is applied
 
 **Automatically invite**
 

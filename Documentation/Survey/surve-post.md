@@ -15,7 +15,7 @@ Update existing survey
 **Auth required** : YES
 
 **Note**
-> see [Survey Models](./Model/survey-interface.md)
+see [Survey Models](./Model/survey-interface.md)
 
 **Data constraints**
 
@@ -35,9 +35,7 @@ All fields are reguired.
 
 **\*** Requried
 
-**\*\***
-
-Each survey must contain Cover page and Thank you page
+**\*\*** Each survey must contain Cover page and Thank you page
 
 ## Example
 Please note that in the example payload below, three questions are being updated and one inserted.

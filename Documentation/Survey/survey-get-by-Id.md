@@ -1,14 +1,13 @@
 ---
 layout: default
-title: GET
+title: GET by Id
 nav_order: 5
 parent: Survey
 ---
 
 # GET 
-get survey by Id
-
->Please find definition of [QuestionConfiguration](./survey-interfaces.md#questionconfiguration) and [SurveySelectionRule](./survey-interfaces.md#surveyselectionrule).
+Get Survey by its Id
+Please find definition of [QuestionConfiguration](./survey-interfaces.md#questionconfiguration) and [SurveySelectionRule](./survey-interfaces.md#surveyselectionrule).
 
 **URL** : `/v1.0/survey/{surveyId}`
 

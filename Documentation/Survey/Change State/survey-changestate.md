@@ -9,7 +9,7 @@ grand_parent: Survey
 
 # POST
 Change state of survey ids included in request payload as an array of integers.
->Please find all possible survey states [here](../Model/survey-enum.md#SurveyState).
+Please find all possible survey states [here](../Model/survey-enum.md#SurveyState).
 
 **URL** : `/v1.0/Survey/ChangeState/{surveySate}`
 
