@@ -59,16 +59,18 @@ Test Environment (also called *UAT*) is used to test new features and resets onc
 
 Percent of allowed change per one request*
 
-`|x-y|/x*100 < Δ OR x < 100`
+`|x-y|/x*100 < z OR x < 100`
 
 **x** = Employees already in system
 
 **y** = Employees beeing send from request
 
-**Δ** = Batch limit
+**z** = Batch limit
 
 > E.g. Batch limit of **25** and *100 Employees in company* results in maximum of 25 addition or subtractions
+
 > example 1: Updates reqest includes *50* already existing employees and *60* new employees results in *50* employees beeing removed *60* added and *50* updated (even thought there might not have been any update). This will result in change of only **10%**
+
 > example 2: Updates reqest includes *60* new employees and no existing, this results in *100* employees in the system beeing removed and *60* added, making it a change of **40%** at the end and the request beeing denied because the Batch limit is set **25**
 
 **\*** Exception to this is only if there is less than **100** employees in the system, then the request is processed immediately and no batch limit is applied
