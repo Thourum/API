@@ -1,13 +1,18 @@
 ---
 layout: default
 title: API
-nav_order: 2
+nav_order: 4
 ---
 
 # Howdy API Documentation
 {: .fs-9 }
 
 ---
+
+# Security
+See [Security](../Index.md#security) for obtaning an `Authorization` token required for **Every** http call
+
+# API
 
 | URL Name  | Methods allowed   |
 |:--|--:|
@@ -19,4 +24,4 @@ nav_order: 2
 |[/v1.0/Survey/ChangeState/{surveyState}](./Documentation/survey-changestate.md)| POST|
 
 # Survey Models
-> see [Survey Models](./Documentation/survey-interface.md)
+See [Survey Models](./Documentation/survey-interface.md)

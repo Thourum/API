@@ -9,6 +9,7 @@ grand_parent: Survey
 # Enums
 
 ## SurveyState
+
 | Value             | Description                                                                  |
 | ----------------- | ---------------------------------------------------------------------------- |
 | 2                 | Active survey																   |

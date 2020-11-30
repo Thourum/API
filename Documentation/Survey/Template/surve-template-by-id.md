@@ -8,8 +8,7 @@ grand_parent: Survey
 
 
 # GET
-
->Please find definition of [QuestionConfiguration](../Model/survey-interface.md#questionconfiguration).
+Please find definition of [QuestionConfiguration](../Model/survey-interface.md#questionconfiguration).
 
 **URL** : `v1.0/Survey/Template/{templateId}`
 
