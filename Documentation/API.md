@@ -1,6 +1,7 @@
 ---
 layout: default
 title: API
+has_children: true
 nav_order: 2
 parent: Advanced
 ---
@@ -33,6 +34,7 @@ To obtain the token do the following:
 The Token can be sent in one of two ways:
 - **HTTP Header**: Add it as header `Authorization: Bearer <API_TOKEN_HERE>` to each request
 - **Query String parameter**: Pass it as parameter `?access_token=<API_TOKEN_HERE>` to url for each request
+
 
 # API
 
