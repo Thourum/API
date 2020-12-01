@@ -41,7 +41,6 @@ This call makes a complete set based change of all employees in the system.
 | `ImmediateManager`   | `String`  | *Max length:* **50**                              | Reporting specific data                                         |
 | `Dimensions`         | `Object`  | Key-Value pair, Value *Max length:* **50**        | Other reporting specific data Eg. Location, Division            |
 
-
 **\*** Required
 
 **\*\*** InvitationDate

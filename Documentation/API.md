@@ -3,12 +3,14 @@ layout: default
 title: API
 nav_order: 2
 parent: Advanced
+
 ---
 
 # Howdy API Documentation
 {: .fs-9 }
 
 ---
+
 
 # Endpoints
 
@@ -33,6 +35,10 @@ To obtain the token do the following:
 The Token can be sent in one of two ways:
 - **HTTP Header**: Add it as header `Authorization: Bearer <API_TOKEN_HERE>` to each request
 - **Query String parameter**: Pass it as parameter `?access_token=<API_TOKEN_HERE>` to url for each request
+=======
+# Security
+See [Security](../Index.md#security) for obtaning an `Authorization` token required for **Every** http call
+
 
 # API
 
